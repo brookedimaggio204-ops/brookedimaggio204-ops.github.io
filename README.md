@@ -1,4 +1,4 @@
-# GEOG 4046
+# GEOG 4046 Maps
 Maps for Assignments in GEOG 4046
 ## Current Weather
 A map showing real-time weather radar and alerts from the National Weather Service.
