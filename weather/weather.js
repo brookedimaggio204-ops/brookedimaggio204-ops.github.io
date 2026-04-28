@@ -17,7 +17,7 @@ $.getJSON(weatherAlertsUrl, function(data) {
   return { color: alertColor };
 },
   onEachFeature: function(feature, layer) {
-  layer.bindPopup(feature.properties.description);
+  layer.bindPopup(feature.properties.headline);
 }
 }).addTo(map);
 });
