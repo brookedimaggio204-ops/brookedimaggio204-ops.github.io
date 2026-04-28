@@ -13,7 +13,7 @@ $.getJSON(weatherAlertsUrl, function(data) {
  L.geoJSON(data, {
   style: { color: 'orange' },
   onEachFeature: function(feature, layer) {
-  layer.bindPopup(feature.properties.headline);
+  layer.bindPopup(feature.properties.properties);
 }
 }).addTo(map);
 });
