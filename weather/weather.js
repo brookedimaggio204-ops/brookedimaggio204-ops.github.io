@@ -20,5 +20,3 @@ $.getJSON(weatherAlertsUrl, function(data) {
   layer.bindPopup(feature.properties.headline);
 }
 }).addTo(map);
-});
-
