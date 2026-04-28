@@ -15,11 +15,6 @@ $.getJSON(weatherAlertsUrl, function(data) {
   var alertColor = 'orange';
   if (feature.properties.severity === 'Severe') alertColor = 'red';
   return { color: alertColor };
- L.geoJSON(data, {
-  style: style: function(feature){
-  var alertColor = 'orange';
-  if (feature.properties.severity === 'Extreme') alertColor = 'lightsalmon';
-  return { color: alertColor };
  },
   onEachFeature: function(feature, layer) {
   layer.bindPopup(feature.properties.description);
